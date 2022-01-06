@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^16.0.6"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
