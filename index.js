@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron')
-
+const apikey = process.env.API_KEY;
 const createWindow = () => {
     const win = new BrowserWindow({
         width: 800,

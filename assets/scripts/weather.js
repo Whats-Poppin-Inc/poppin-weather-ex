@@ -1,8 +1,10 @@
-const apikey = process.env.API_KEY;
+var apikey = '';
 var lat = '';
 var long = '';
 
-
+$.getJSON("env.json", function(json) {
+    apikey = json.API_KEY; 
+ });
 async function getWeather(){
     getLocation();
     let url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+long+'&units=metric&appid='+apikey;
