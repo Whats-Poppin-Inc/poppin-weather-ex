@@ -12,9 +12,24 @@
     <script src="./assets/scripts/weather.js"></script>    
 
     <h1 class = "text-light">Poppin Weather</h1>
-    <div class = "container">
-        <img src="./assets/images/logo.png" alt="What's Poppin Logo">
+    <div class = "container">        
+        <div class="row">
+            <div class="col form-floating">
+                <input type="text" class="form-control" id = "lat" placeholder="0" aria-label="Latitude">
+                <label for="lat">Latitude</label>
+            </div>
+            <div class="col form-floating">
+                <input type="text" class="form-control" id = "long" placeholder="0" aria-label="Longitude">
+                <label for="long">Longitude</label>
+            </div>
+            <button type="button" class="btn btn-primary mt-3" id = "submit" onclick="getWeather()">Submit</button>
+        </div>
+        <div class="container border mt-5 text-light" id = "weather">
+            <p class="mt-2">Temp: <span id = "temp"></span></p>
+        </div>
     </div>
+    
+    
 
     <!--Bootstrap JS and Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

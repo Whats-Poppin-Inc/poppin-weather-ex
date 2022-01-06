@@ -5,16 +5,17 @@ var long = '';
 
 async function getWeather(){
     getLocation();
-    let url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+long+'&appid='+apikey;
+    let url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+long+'&units=metric&appid='+apikey;
     let response = await fetch(url);
     let data = await response.json();
     console.log(data);
+    document.getElementById('temp').innerHTML = data.current.temp + '&deg;C';
 }
 
 function getLocation(){
-    lat = '40.273190';
-    long = '-76.886703';
+    lat = document.getElementById('lat').value;
+    long = document.getElementById('long').value;
 }
 
-//when the page loads get the weather
-window.onload = getWeather();
+
+
