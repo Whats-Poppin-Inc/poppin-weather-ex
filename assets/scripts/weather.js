@@ -1,4 +1,4 @@
-const apikey = 'b47e4bef422b5d1e5461fd569b1c8ed3';
+const apikey = process.env.API_KEY;
 var lat = '';
 var long = '';
 
