@@ -1,0 +1,14 @@
+{
+  "name": "poppin-weather",
+  "version": "1.0.0",
+  "description": "Open Source Weather app using Open Weather API",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Miles Weber",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.6"
+  }
+}
