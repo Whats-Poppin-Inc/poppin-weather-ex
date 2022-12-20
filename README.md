@@ -1,2 +1,2 @@
 # poppin-weather
-Open Source Weather app using Open Weather API
+Electron weather app example
